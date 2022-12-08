@@ -1,0 +1,46 @@
+@import "../base/variables";
+
+.header {
+    text-align: center;
+
+    .header img {
+        margin-top: 10px;
+    }
+
+    .nav {
+        background-color: $color-primario;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: nth($font-size, 3);
+            align-items: center;
+
+            .menu-item {
+                display: inline-block;
+                list-style: none;
+                text-decoration: none;
+                transition: 0.5s;
+
+                &:hover {
+                    transform: scale(1.25);
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $color-secundario;
+                    font-weight: 900;
+                }
+
+                &:hover {
+                    color: $color-secundario;
+                    transform: scale(1.25);
+                }
+
+            }
+        }
+    }
+}

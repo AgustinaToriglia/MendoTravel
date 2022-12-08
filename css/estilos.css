@@ -1,0 +1,400 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300; }
+
+.header {
+  text-align: center; }
+  .header .header img {
+    margin-top: 10px; }
+  .header .nav {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .header .nav .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 20px;
+      align-items: center; }
+      .header .nav .menu .menu-item {
+        display: inline-block;
+        list-style: none;
+        text-decoration: none;
+        transition: 0.5s; }
+        .header .nav .menu .menu-item:hover {
+          transform: scale(1.25); }
+        .header .nav .menu .menu-item a {
+          text-decoration: none;
+          color: white;
+          font-weight: 900; }
+        .header .nav .menu .menu-item:hover {
+          color: white;
+          transform: scale(1.25); }
+
+.hero {
+  width: 100%;
+  height: 85vh;
+  text-align: center;
+  background-image: url("../img/mdz4.webp");
+  background-position: center;
+  background-size: cover; }
+
+.hero-title {
+  text-align: center;
+  padding: 20px 20px; }
+  .hero-title h2 {
+    color: black;
+    font-size: 40px; }
+  .hero-title p {
+    font-size: 30px; }
+
+.experiencias .exp-title {
+  text-align: center;
+  font-size: 20px;
+  padding: 50px 150px; }
+  .experiencias .exp-title h2 {
+    padding-bottom: 20px; }
+
+.experiencias .exp {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 50px;
+  text-align: center; }
+  .experiencias .exp .exp-item h3 {
+    font-size: 25px;
+    padding-bottom: 10px; }
+  .experiencias .exp .exp-item p {
+    font-size: 18px;
+    padding: 10px 50px; }
+
+.experiencias .exp-button {
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 35px;
+  padding-bottom: 20px;
+  transition: 0.5s ease-in; }
+  .experiencias .exp-button:hover {
+    transform: scale(1.1); }
+  .experiencias .exp-button button {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer; }
+    .experiencias .exp-button button a {
+      text-decoration: none;
+      color: white; }
+
+.galeria {
+  background-color: black;
+  background: black;
+  background: radial-gradient(circle, black 37%, white 100%); }
+  .galeria .galeria-title h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .galeria .galeria-title p {
+    font-size: 20px;
+    text-align: center;
+    color: white; }
+  .galeria .galeria-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px; }
+    .galeria .galeria-body button {
+      border: none;
+      color: black;
+      background-color: white;
+      font-size: 15px;
+      border-radius: 7px;
+      padding: 10px;
+      cursor: pointer; }
+    .galeria .galeria-body .galeria-img {
+      width: 400px;
+      height: 300px;
+      border-radius: 15px;
+      border-color: black;
+      border-style: solid; }
+    .galeria .galeria-body h3 {
+      color: white;
+      text-align: center; }
+    .galeria .galeria-body .galeria-button {
+      text-align: center;
+      padding-top: 20px;
+      padding-left: 35px;
+      padding-bottom: 20px;
+      font-weight: 20px;
+      transition: 0.5s ease-in; }
+      .galeria .galeria-body .galeria-button:hover {
+        transform: translateY(5px);
+        transform: scale(1.1); }
+
+.ubicacion {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .ubicacion h2 {
+    padding-bottom: 20px; }
+
+/*--GRID VEHICULOS--*/
+.vehicle {
+  text-align: center;
+  margin-top: 20px; }
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  text-align: center; }
+
+.grid-item {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 20px; }
+
+.grid-item h2 {
+  margin-bottom: 10px; }
+
+.grid-item img {
+  max-width: 100%;
+  height: 350px;
+  vertical-align: middle;
+  transition: 1s ease-in; }
+
+.grid-item:hover {
+  transform: scale(1.1); }
+
+.grid-item button {
+  border: none;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  border-radius: 7px;
+  padding: 10px;
+  cursor: pointer; }
+  .grid-item button a {
+    text-decoration: none;
+    color: white; }
+
+.footer {
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 40px; }
+  .footer a img {
+    width: 50px;
+    height: 50px; }
+  .footer a p {
+    padding: 20px; }
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  body .header {
+    text-align: center;
+    background-size: cover; }
+  body .header img {
+    margin: 0; }
+  body .header .nav {
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 0; }
+  body .header .nav .menu {
+    flex-direction: column;
+    font-size: 20px;
+    width: 100%; }
+  body .header .nav .menu a img {
+    width: 200px; }
+  body .header .nav .menu .menu-item {
+    margin-bottom: 10px; }
+  main .hero {
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+    background-image: url("../img/mdz4.webp");
+    background-position: center;
+    background-size: cover;
+    min-width: 768px; }
+  main .hero-title {
+    text-align: center;
+    padding: 20px 20px; }
+  main .hero-title h2 {
+    color: black¿;
+    font-size: 30px; }
+  main .hero-title p {
+    font-size: 20px; }
+  main .galeria {
+    background-color: black;
+    background: black;
+    background: radial-gradient(circle, black 37%, white 100%); }
+  main .galeria .galeria-title h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  main .galeria .galeria-title p {
+    font-size: 20px;
+    text-align: center;
+    color: white; }
+  main .galeria-body .galeria-img {
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: solid; }
+  main .galeria .galeria-body h3 {
+    color: white;
+    text-align: center; }
+  main .galeria .galeria-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 20px; }
+  main .vehicle {
+    text-align: center;
+    margin-top: 20px; }
+  main .vehicle h2 {
+    font-size: 25px; }
+  main .grid-container {
+    display: grid;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-template-columns: repeat(2, 1fr); }
+  main .grid-container .grid-item h2 {
+    margin-bottom: 10px;
+    font-size: 20px; }
+  main .grid-container .grid-item img {
+    height: 300px; }
+  main .grid-container .grid-item button {
+    font-size: 14px; } }
+
+@media (max-width: 320px) {
+  body .header {
+    text-align: center;
+    background-size: cover; }
+  body .header img {
+    margin: 0; }
+  body header .nav {
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 0; }
+  body .header .nav .menu {
+    flex-direction: column;
+    font-size: 15px;
+    width: 100%; }
+  body .header .nav .menu a img {
+    width: 150px; }
+  body .header .nav .menu .menu-item {
+    margin-bottom: 7px; }
+  main .hero {
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    background-image: url("../img/mdz4.webp");
+    background-position: center;
+    background-size: cover;
+    max-width: 320px; }
+  main .hero-title {
+    text-align: center;
+    padding: 20px 20px; }
+  main .hero-title h2 {
+    color: black¿;
+    font-size: 20px; }
+  main .hero-title p {
+    font-size: 15px; }
+  .experiencias .exp-title {
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 15px; }
+  .experiencias .exp-title h2 {
+    padding-bottom: 20px; }
+  .experiencias .exp {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    text-align: center; }
+  .experiencias .exp .exp-item h3 {
+    font-size: 20px;
+    padding-bottom: 10px; }
+  .experiencias .exp .exp-item p {
+    font-size: 15px;
+    padding: 10px 50px; }
+  .experiencias .exp-button {
+    padding-left: 5px; }
+  .experiencias .exp-button button {
+    font-size: 15px;
+    padding: 4px; }
+  .galeria .galeria-title h2 {
+    font-size: 25px; }
+  .galeria .galeria-title p {
+    font-size: 15px; }
+  .galeria .galeria-body .galeria-img {
+    width: 200px;
+    height: 150px; }
+  .galeria-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .galeria .galeria-body button {
+    font-size: 12px; }
+  .galeria .galeria-body .galeria-button {
+    padding-top: 15px;
+    padding-left: 7px;
+    padding-bottom: 15px; }
+  .ubicacion {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .ubicacion h2 {
+    padding-bottom: 20px; }
+  .ubicacion iframe {
+    width: auto;
+    height: 250px; }
+  .footer {
+    margin-top: 30px; }
+  .footer a img {
+    width: 30px;
+    height: 30px; }
+  .footer p {
+    padding: 10px; }
+  .vehicle {
+    text-align: center;
+    margin-top: 20px; }
+  .vehicle h2 {
+    font-size: 16px; }
+  .vehicle p {
+    font-size: 13px;
+    margin-top: 10px; }
+  .grid-container {
+    display: grid;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-container .grid-item h2 {
+    margin-bottom: 10px;
+    font-size: 20px; }
+  .grid-container .grid-item img {
+    height: 300px; }
+  .grid-container .grid-item .grid-button {
+    font-size: 14px; } }
