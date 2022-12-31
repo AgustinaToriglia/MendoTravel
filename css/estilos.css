@@ -13,28 +13,28 @@ body {
   text-align: center; }
   .header .header img {
     margin-top: 10px; }
-  .header .nav {
+  .header #nav {
     background-color: black;
     padding-top: 10px;
     padding-bottom: 10px; }
-    .header .nav .menu {
+    .header #nav .menu {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       font-size: 20px;
       align-items: center; }
-      .header .nav .menu .menu-item {
+      .header #nav .menu .menu-item {
         display: inline-block;
         list-style: none;
         text-decoration: none;
         transition: 0.5s; }
-        .header .nav .menu .menu-item:hover {
+        .header #nav .menu .menu-item:hover {
           transform: scale(1.25); }
-        .header .nav .menu .menu-item a {
+        .header #nav .menu .menu-item a {
           text-decoration: none;
           color: white;
           font-weight: 900; }
-        .header .nav .menu .menu-item:hover {
+        .header #nav .menu .menu-item:hover {
           color: white;
           transform: scale(1.25); }
 
@@ -203,24 +203,40 @@ body {
   .footer a p {
     padding: 20px; }
 
+@media screen and (max-width: 1240px) {
+  main .galeria-body {
+    flex-direction: column; }
+  main .galeria-body .galeria-img {
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: solid; }
+  main .galeria .galeria-body h3 {
+    color: white;
+    text-align: center; }
+  main .galeria .galeria-body {
+    flex-direction: column;
+    text-align: center; } }
+
 @media only screen and (max-width: 768px) {
   body .header {
     text-align: center;
     background-size: cover; }
   body .header img {
     margin: 0; }
-  body .header .nav {
+  body .header #nav {
     justify-content: space-between;
     flex-direction: column;
     margin-top: 0;
     padding: 0; }
-  body .header .nav .menu {
+  body .header #nav .menu {
     flex-direction: column;
     font-size: 20px;
     width: 100%; }
-  body .header .nav .menu a img {
+  body .header #nav .menu a img {
     width: 200px; }
-  body .header .nav .menu .menu-item {
+  body .header #nav .menu .menu-item {
     margin-bottom: 10px; }
   main .hero {
     width: 100%;
@@ -261,11 +277,8 @@ body {
     color: white;
     text-align: center; }
   main .galeria .galeria-body {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 20px 20px; }
+    text-align: center; }
   main .vehicle {
     text-align: center;
     margin-top: 20px; }
@@ -285,32 +298,54 @@ body {
   main .grid-container .grid-item button {
     font-size: 14px; } }
 
+@media screen and (max-width: 600px) {
+  main .ubicacion {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  main .ubicacion h2 {
+    padding-bottom: 20px; }
+  main .ubicacion iframe {
+    width: 100%;
+    height: 250px; } }
+
+@media screen and (max-width: 463px) {
+  main .galeria .galeria-body .galeria-img {
+    width: 300px;
+    height: 200px;
+    margin: 0; }
+  main .experiencias .exp {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    text-align: center; }
+  main .experiencias .exp-title {
+    font-size: 20px;
+    padding: 35px 100px; } }
+
 @media screen and (max-width: 320px) {
   body .header {
     text-align: center;
     background-size: cover; }
   body .header img {
     margin: 0; }
-  body header .nav {
+  body header #nav {
     justify-content: space-between;
     flex-direction: column;
     margin-top: 0;
     padding: 0; }
-  body .header .nav .menu {
+  body .header #nav .menu {
     flex-direction: column;
     font-size: 15px;
     width: 100%; }
-  body .header .nav .menu a img {
+  body .header #nav .menu a img {
     width: 150px; }
-  body .header .nav .menu .menu-item {
+  body .header #nav .menu .menu-item {
     margin-bottom: 7px; }
   main .hero {
     width: 100%;
-    height: 40vh;
-    text-align: center;
-    background-image: url("../img/mdz4.webp");
-    background-position: center;
-    background-size: cover; }
+    height: 40vh; }
   main .hero-title {
     text-align: center;
     padding: 20px 20px; }
@@ -345,12 +380,13 @@ body {
     font-size: 25px; }
   main .galeria .galeria-title p {
     font-size: 15px; }
-  main .galeria .galeria-body .galeria-img {
-    width: 200px;
-    height: 150px;
+  main .galeria .galeria-body {
     flex-direction: column;
     text-align: center;
     margin: 0; }
+  main .galeria .galeria-body .galeria-img {
+    width: 250px;
+    height: 180px; }
   main .galeria .galeria-body button {
     font-size: 12px; }
   main .galeria .galeria-body .galeria-button {
@@ -364,9 +400,6 @@ body {
     padding-bottom: 20px; }
   main .ubicacion h2 {
     padding-bottom: 20px; }
-  main .ubicacion iframe {
-    width: auto;
-    height: 250px; }
   .footer {
     margin-top: 30px; }
   .footer a img {

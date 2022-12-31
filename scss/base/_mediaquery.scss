@@ -1,3 +1,28 @@
+@media screen and (max-width: 1240px) {
+
+    main .galeria-body {
+        flex-direction: column;
+    }
+
+    main .galeria-body .galeria-img {
+        width: 400px;
+        height: 300px;
+        border-radius: 15px;
+        border-color: black;
+        border-style: solid;
+    }
+
+    main .galeria .galeria-body h3 {
+        color: white;
+        text-align: center;
+    }
+
+    main .galeria .galeria-body {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width:768px) {
     body .header {
         text-align: center;
@@ -8,24 +33,27 @@
         margin: 0;
     }
 
-    body .header .nav {
+    body .header #nav {
         justify-content: space-between;
         flex-direction: column;
         margin-top: 0;
         padding: 0;
     }
 
-    body .header .nav .menu {
+    body .header #nav .menu {
         flex-direction: column;
         font-size: 20px;
         width: 100%;
     }
-    body .header .nav .menu a img {
-        width:200px;
+
+    body .header #nav .menu a img {
+        width: 200px;
     }
-    body .header .nav .menu .menu-item{
+
+    body .header #nav .menu .menu-item {
         margin-bottom: 10px;
     }
+
     main .hero {
         width: 100%;
         height: 85vh;
@@ -48,13 +76,14 @@
     main .hero-title p {
         font-size: 20px;
     }
+
     main .galeria {
         background-color: black;
         background: rgb(0, 0, 0);
         background: radial-gradient(circle, rgba(0, 0, 0, 1) 37%, rgba(255, 255, 255, 1) 100%);
-    
+
     }
-    
+
     main .galeria .galeria-title h2 {
         font-size: 30px;
         color: white;
@@ -62,13 +91,13 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    
+
     main .galeria .galeria-title p {
         font-size: 20px;
         text-align: center;
         color: white;
     }
-    
+
     main .galeria-body .galeria-img {
         width: 400px;
         height: 300px;
@@ -76,28 +105,26 @@
         border-color: black;
         border-style: solid;
     }
-    
+
     main .galeria .galeria-body h3 {
         color: white;
         text-align: center;
     }
-    
+
     main .galeria .galeria-body {
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
         text-align: center;
-        padding: 20px 20px;
     }
 
     main .vehicle {
         text-align: center;
         margin-top: 20px;
     }
+
     main .vehicle h2 {
         font-size: 25px;
     }
-    
+
     main .grid-container {
         display: grid;
         width: 100%;
@@ -106,18 +133,56 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    main .grid-container .grid-item h2{
-        margin-bottom: 10px ;
+    main .grid-container .grid-item h2 {
+        margin-bottom: 10px;
         font-size: 20px;
     }
-    
-    
+
+
     main .grid-container .grid-item img {
         height: 300px;
     }
-    
+
     main .grid-container .grid-item button {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main .ubicacion {
+        font-size: 15px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    main .ubicacion h2 {
+        padding-bottom: 20px;
+    }
+
+    main .ubicacion iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:463px) {
+    main .galeria .galeria-body .galeria-img {
+        width: 300px;
+        height: 200px;
+        margin: 0;
+    }
+
+    main .experiencias .exp {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
+        text-align: center;
+    }
+
+    main .experiencias .exp-title {
+        font-size: 20px;
+        padding: 35px 100px;
     }
 }
 
@@ -131,31 +196,30 @@
         margin: 0;
     }
 
-    body header .nav {
+    body header #nav {
         justify-content: space-between;
         flex-direction: column;
         margin-top: 0;
         padding: 0;
     }
 
-    body .header .nav .menu {
+    body .header #nav .menu {
         flex-direction: column;
         font-size: 15px;
         width: 100%;
     }
-    body .header .nav .menu a img {
-        width:150px;
+
+    body .header #nav .menu a img {
+        width: 150px;
     }
-    body .header .nav .menu .menu-item{
+
+    body .header #nav .menu .menu-item {
         margin-bottom: 7px;
     }
+
     main .hero {
         width: 100%;
         height: 40vh;
-        text-align: center;
-        background-image: url("../img/mdz4.webp");
-        background-position: center;
-        background-size: cover;
 
     }
 
@@ -172,64 +236,68 @@
     main .hero-title p {
         font-size: 15px;
     }
+
     main .experiencias .exp-title {
         text-align: center;
         font-size: 15px;
         padding: 15px 15px;
     }
-    
+
     main .experiencias .exp-title h2 {
         padding-bottom: 20px;
     }
-    
+
     main .experiencias .exp {
         display: flex;
         flex-direction: column;
         padding: 0px 15px;
         text-align: center;
     }
-    
+
     main .experiencias .exp .exp-item h3 {
         font-size: 20px;
         padding-bottom: 10px;
     }
-    
+
     main .experiencias .exp .exp-item p {
         font-size: 15px;
         padding: 10px 50px;
     }
-    
+
     main .experiencias .exp-button {
         padding-left: 5px;
     }
-    
+
     main .experiencias .exp-button button {
         font-size: 15px;
         padding: 4px;
-        
+
     }
-    
+
     main .galeria .galeria-title h2 {
         font-size: 25px;
     }
-    
+
     main .galeria .galeria-title p {
         font-size: 15px;
     }
-    
-    main .galeria .galeria-body .galeria-img {
-        width: 200px;
-        height: 150px;
+
+    main .galeria .galeria-body {
+
         flex-direction: column;
         text-align: center;
-        margin:0;
+        margin: 0;
     }
-    
+
+    main .galeria .galeria-body .galeria-img {
+        width: 250px;
+        height: 180px;
+    }
 
     main .galeria .galeria-body button {
         font-size: 12px;
     }
-    
+
     main .galeria .galeria-body .galeria-button {
         padding-top: 15px;
         padding-left: 7px;
@@ -242,25 +310,21 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    
+
     main .ubicacion h2 {
         padding-bottom: 20px;
     }
-    
-    main .ubicacion iframe{
-        width: auto;
-        height: 250px;
-    }
-    
+
+
     .footer {
         margin-top: 30px;
     }
-    
+
     .footer a img {
         width: 30px;
         height: 30px;
     }
-    
+
     .footer p {
         padding: 10px;
     }
@@ -274,11 +338,11 @@
         font-size: 16px;
     }
 
-    .vehicle p{
+    .vehicle p {
         font-size: 13px;
         margin-top: 10px;
     }
-    
+
     .grid-container {
         display: grid;
         width: 100%;
@@ -287,16 +351,16 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .grid-container .grid-item h2{
-        margin-bottom: 10px ;
+    .grid-container .grid-item h2 {
+        margin-bottom: 10px;
         font-size: 20px;
     }
-    
-    
+
+
     .grid-container .grid-item img {
         height: 300px;
     }
-    
+
     .grid-container .grid-item .grid-button {
         font-size: 14px;
     }
